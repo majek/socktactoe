@@ -1,6 +1,3 @@
-# from random import randint
-import pdb
-
 
 class Game():
     memo = {}
@@ -82,5 +79,7 @@ class Game():
                 b[6], " | ", b[7], " | ", b[8], "\n"])
         return out
 
+
 if __name__ == '__main__':
+    import pdb
     pdb.set_trace()
