@@ -9,7 +9,7 @@ class Game():
     def validate_move(self, square):
         try:
             return self.matrix[square] == ' '
-        except: #mostly catching index errors
+        except IndexError:
             print "validate move error:", square
             return False
 
