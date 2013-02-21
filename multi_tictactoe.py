@@ -2,8 +2,11 @@
 class Game():
     memo = {}
 
-    def __init__(self):
-        self.matrix = [' ']*9
+    def __init__(self, matrix=None):
+        if not matrix:
+            self.matrix = [' ']*9
+        else:
+            self.matrix = list(matrix)
         self.player = 'x'
 
     def validate_move(self, square):
